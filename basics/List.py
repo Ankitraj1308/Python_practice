@@ -39,3 +39,30 @@ no_of_items = [10, 20, 34, 74, 32]
 
 for i in range(len(candy_list)):
     print(candy_list[i] + "-" + str(no_of_items[i]))
+
+
+'''
+Q3 Add Space between Potential Words.
+Example:
+Input:
+['campusxIs', 'bestFor', 'dataScientist']
+Output:
+['campusx Is', 'best For', 'data Scientist']
+'''
+
+words = ['campusxIs', 'bestFor', 'dataScientist']
+
+result = []
+
+for word in words:
+    new_word = ''
+
+    for char in word:
+        if char.isupper():
+            new_word += ' ' + char
+        else:
+            new_word += char
+
+    result.append(new_word)
+
+print(result)
