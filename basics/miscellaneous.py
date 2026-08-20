@@ -1,3 +1,4 @@
-str = "ankit"
-age = 20
-print("my name is {}. i am {}".format(str,age))
+x = [1,2,3]
+y = x
+y.append(4)
+print(x)
